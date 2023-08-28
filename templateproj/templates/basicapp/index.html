@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html" %}
+  {% block head_block %}
+    {% load my_extras %}
+    <title>Home</title>
+  {% endblock %}
+  {% block body_block %}
+    <h1>WELCOME TO INDEX PAGE</h1>
+    <h2>This is <em>Index.html</em> showing</h2>
+    <h1>{{ text|butt:'Hello' }}</h1>
+    <h2>{{ number|add:"99" }}</h2>
+  {% endblock %}

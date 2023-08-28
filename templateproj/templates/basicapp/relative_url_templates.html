@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html" %}
+  {% block head_block %}
+  {% endblock %}
+  <title>Relative</title>
+
+    {% block body_block %}
+    <h1>WELCOME TO RELATIVE URL TEMPLATES</h1>
+    <a class="btn btn-primary btn-lg" href="{% url 'basicapp:other' %}">Other</a>
+    <a class="btn btn-primary btn-lg" href="{% url 'admin:index' %}">Admin</a>
+    <a class="btn btn-primary btn-lg" href="{% url 'basicapp:index' %}">Home</a>
+    <a class="btn btn-primary btn-lg" href="{% url 'index' %}">Home</a>
+    {% endblock %}
